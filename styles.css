@@ -1,0 +1,67 @@
+body, input, button {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #333;
+}
+
+body {
+  height: 100dvh;
+  background-image: url(design-concept.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  inset: 0;
+}
+
+main {
+  text-align: center;
+  width: 100vmin;
+  height: 100vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: url(design-concept.png);
+  background-size: contain;
+  z-index: 2;
+}
+
+h1 {
+  margin: 100px auto;
+  position: relative;
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  translate: -49% -50%;
+  background-color: #fee9;
+  padding: 40px;
+}
+
+input {
+  text-align: center;
+  background-color: #fee9;
+  width: 6em;
+}
+
+output {
+  display: block;
+  height: 20px;
+}
